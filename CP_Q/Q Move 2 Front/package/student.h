@@ -12,6 +12,8 @@ void CP::queue<T>::move_to_front(size_t pos) {
         mData[(mFront + i) % mCap] = mData[(mFront + i - 1) % mCap];
     }
     mData[mFront] = temp;
+    
 }
 
 #endif
+
