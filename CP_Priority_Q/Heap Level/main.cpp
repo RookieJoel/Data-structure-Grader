@@ -24,11 +24,12 @@ int main() {
     cin >> x;
     pq.push(x);
   }
-  std::vector<int> r = pq.at_level(k);
-  cout << "size = " << r.size() << endl;
-  for (auto &x : r) {
-    cout << x << " ";
-  }
+  // std::vector<int> r = pq.at_level(k);
+  pq.at_level(k);
+  // cout << "size = " << r.size() << endl;
+  // for (auto &x : r) {
+  //   cout << x << " ";
+  // }
   cout << endl;
 
 }

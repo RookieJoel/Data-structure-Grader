@@ -2,7 +2,7 @@
 
 using namespace std;
 
-bool check(vector<int> v,int a,int k){
+bool check(vector<int> &v,int a,int k){
     int p = (a-1)/k;
     if(v[p] < v[a]) return false;
     return true;

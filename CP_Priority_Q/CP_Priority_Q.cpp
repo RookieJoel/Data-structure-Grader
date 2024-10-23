@@ -1,6 +1,3 @@
-#ifndef _CP_PRIORITY_QUEUE_INCLUDED_
-#define _CP_PRIORITY_QUEUE_INCLUDED_
-
 #include <stdexcept>
 #include <iostream>
 //#pragma once
@@ -11,7 +8,7 @@ template <typename T,typename Comp = std::less<T> >
 
 class priority_queue
 {
-  protected:
+  public:
     T *mData;
     size_t mCap;
     size_t mSize;
@@ -122,15 +119,11 @@ class priority_queue
       fixDown(0);
     }
 
-    //--------------- for quiz --------------------
-    bool find(T k) const;
-    int find_level(T k) const;
+ 
 
 
 };
 
 }
-
-#endif
 
 

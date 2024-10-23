@@ -23,7 +23,7 @@ int CP::priority_queue<T,Comp>::find_level(T k) const {
   for(int i =0;i<mSize;i++){
     if(mData[i] == k) idx = i;
   }
-  std::cout << idx;
+  // std::cout << idx;
   int h=0;
   while(idx > 0){
     h++;
