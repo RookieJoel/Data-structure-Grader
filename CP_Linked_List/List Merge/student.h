@@ -6,6 +6,7 @@
 template <typename T>
 void CP::list<T>::merge(CP::list<CP::list<T>> &ls) {
   //write your code here
+
   auto it = ls.begin();
   this->mHeader->prev->next = it.ptr;
   it->prev = this->mHeader->prev->next;
